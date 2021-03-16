@@ -1,0 +1,41 @@
+{
+  "test_case_task_one":{
+    "test_for_exactly_three_input_values": {
+      "test_data_set": {
+        "positive": [{
+          "test_description": "Test for validating command providing exactly three input values",
+          "edges": "3.2 4 5.1",
+          "expected_result": true
+        }]
+      }
+    },
+    "test_for_less_than_three_input_values": {
+      "test_data_set": {
+        "negative": [
+          {
+            "test_description": "Test for validating command providing insufficient input values",
+            "edges": "12 45.0",
+            "expected_result": true
+          }]
+      }
+    },
+    "test_more_than_three_inputs": {
+      "test_data_set": {
+        "negative": [{
+          "test_description": "Test for validating command providing more than required input values",
+          "edges": "43 51 78 40",
+          "expected_result": true
+        }]
+      }
+    },
+    "test_with_invalid_input": {
+      "test_data_set": {
+        "negative": [{
+          "test_description": "Test for validating command providing invalid type of input values",
+          "filename": "1 -1 e",
+          "expected_result": false
+        }]
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+2021-03-16 12:04:18,797 Performing calculation with Cuboid Edges:
+2021-03-16 12:04:18,797 {'surface_area': 52.0, 'volume': 24.0, 'sum_of_edges': 36.0, 'error': None}
